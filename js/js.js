@@ -192,50 +192,36 @@ const pop111 = document.querySelector('.pop111');
 
 
 const pop1111 = document.querySelector('.pop1111');
-  const ruk4 = document.querySelector('.ruk4');
-  const ok1111 = document.querySelector('.ok1111');
-  const close1111 = document.querySelector('.close1111');
+const ruk4 = document.querySelector('.ruk4');
+const ok1111 = document.querySelector('.ok1111');
+const close1111 = document.querySelector('.close1111');
 
-
- 
-  if (!pop111 || !ruk3 || !ok111 || !close111) {
-    console.error('Не все элементы найдены на странице');
-    return;
-  }
-
- 
+if (!pop1111 || !ruk4 || !ok1111 || !close1111) {
+  console.error('Не все элементы найдены на странице');
+} else {
   function openPop1111() {
     pop1111.style.display = 'flex';
   }
 
- 
   function closePop1111() {
     pop1111.style.display = 'none';
   }
 
-  
-
- 
-
-
   function handleOk1111Click() {
-    closePop1111();     
-   
+    closePop1111();
+    window.open('https://www.calameo.com/read/008186710b71a25042b37', '_blank');
   }
-
 
   ruk4.addEventListener('click', openPop1111);
   ok1111.addEventListener('click', handleOk1111Click);
   close1111.addEventListener('click', closePop1111);
 
-
-
   window.addEventListener('click', (event) => {
-    if (event.target === pop111) {
+    if (event.target === pop1111) {
       closePop1111();
     }
-   
   });
+}
 
 
 
