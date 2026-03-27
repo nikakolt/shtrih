@@ -209,7 +209,7 @@ if (!pop1111 || !ruk4 || !ok1111 || !close1111) {
 
   function handleOk1111Click() {
     closePop1111();
-    window.open('https://www.calameo.com/read/008186710b71a25042b37', '_blank');
+    window.open('https://www.calameo.com/read/0081867107f7fc46d61cd', '_blank');
   }
 
   ruk4.addEventListener('click', openPop1111);
